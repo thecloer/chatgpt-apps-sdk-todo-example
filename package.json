@@ -1,0 +1,25 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "a todo app example on quick start for chat GPT apps SDK docs",
+  "keywords": [
+    "chat",
+    "gpt",
+    "apps"
+  ],
+  "license": "ISC",
+  "author": "thecloer",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start:inspector": "npx @modelcontextprotocol/inspector@latest --server-url http://localhost:8787/mcp --transport streamable-http",
+    "start:server": "node server.js",
+    "start:tunnel": "cloudflared tunnel --url http://localhost:8787"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "^1.1.0",
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {}
+}
